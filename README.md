@@ -110,6 +110,23 @@ $env:ANDROID_HOME = "C:\path\to\android-sdk"
 
 `app-release.apk` 使用本地调试证书签名，适合个人侧载，不用于应用商店发布。
 
+## 发布
+
+Windows 用户可以把两个平台的令牌保存到 Windows 凭据管理器：
+
+```text
+AiCallGuard/GitHub
+AiCallGuard/Gitee
+```
+
+之后使用：
+
+```powershell
+.\publish.ps1 -CommitMessage "Describe the change"
+```
+
+脚本会提交当前改动，并分别推送到 `origin` 和 `gitee`。令牌不会写入仓库或 Git remote URL。
+
 ## 目录
 
 ```text
