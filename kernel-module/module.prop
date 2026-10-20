@@ -1,0 +1,6 @@
+id=ai_call_guard_boot
+name=AI Call Guard Boot Companion
+version=1.3.0
+versionCode=4
+author=Codex
+description=Starts the AI Call Guard foreground service after boot and periodically nudges it if it was stopped.
